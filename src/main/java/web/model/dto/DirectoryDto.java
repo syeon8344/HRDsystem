@@ -13,6 +13,4 @@ public class DirectoryDto {
     private int pno;
     private String dname;
     private String dcontact;
-
-
 }

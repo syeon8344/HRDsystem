@@ -12,4 +12,5 @@ public class PersonnelDto {
     private String pcontact;
     private String prank;
     private int dno;
+    private String dname;
 }
