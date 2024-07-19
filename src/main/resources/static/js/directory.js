@@ -23,7 +23,7 @@ function dAdd(){
 dPrint();
 // 전체 출력
 function dPrint(){
-    $ajax({
+    $.ajax({
         async : false ,         
         method : 'get' ,      
         url : "/directory/dprint",            
@@ -45,6 +45,25 @@ function dPrint(){
 
 
 // 부서수정
+function dUpdate(){
+
+    $.ajax({       
+            async : false ,         
+            method : 'put' ,      
+            url : "/directory/dupdate",
+            success : 
+    })
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
