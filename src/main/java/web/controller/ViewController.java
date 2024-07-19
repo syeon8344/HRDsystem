@@ -18,4 +18,12 @@ public class ViewController {
     public String personnel(){
         return "/personnel.html";
     }
+    @GetMapping("/personnel/addpersonnel")
+    public String addpersonnel(){
+        return "/personnel/addpersonnel.html";
+    }
+    @GetMapping("/signup")
+    public String signup(){
+        return "/signup.html";
+    }
 }
