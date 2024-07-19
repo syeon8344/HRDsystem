@@ -23,6 +23,38 @@ function readPersonnel(){
         }
     })
 }
+function editPersonnel(num){
+    $.ajax({
+        method : "PUT",
+        url : "/personnel/edit",
+        data : JSON.stringify({pno : num, pname : name, pcontact : contact}),
+        contentType : "application/JSON",
+        success : resp => {
+            if (resp==true){
+                console.log("삭제 완료")
+            } else {
+                console.log("삭제 실패")
+            }
+            readPersonnel();
+        }
+    })
+}
+function deletePersonnel(num){
+    $.ajax({
+        method : "DELETE",
+        url : "/personnel/delete",
+        data : JSON.stringify({pno : num}),
+        contentType : "application/JSON",
+        success : resp => {
+            if (resp==true){
+                console.log("삭제 완료")
+            } else {
+                console.log("삭제 실패")
+            }
+            readPersonnel();
+        }
+    })
+}
 /*
 <tr>
     <th scope="row">1</th>
