@@ -33,7 +33,7 @@ public class PersonnelController {
 
     // 4. 인사 삭제
     @DeleteMapping("/delete")
-    public boolean deletePersonnel(PersonnelDto dto){
+    public boolean deletePersonnel(@RequestBody PersonnelDto dto){
         return personnelService.deletePersonnel(dto);
     }
 
