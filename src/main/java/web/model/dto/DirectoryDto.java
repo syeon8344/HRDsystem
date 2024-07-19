@@ -10,7 +10,7 @@ import lombok.*;
 @Getter @Setter @ToString
 
 public class DirectoryDto {
-    private int pno;
+    private int dno;
     private String dname;
     private String dcontact;
 
