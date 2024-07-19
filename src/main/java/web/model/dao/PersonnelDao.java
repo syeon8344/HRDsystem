@@ -29,7 +29,7 @@ public class PersonnelDao extends Dao{
     public ArrayList<PersonnelDto> readPersonnel(){
         try{
             ArrayList<PersonnelDto> list = new ArrayList<>();
-            String sql = "select * from personnel inner join directory on ;";
+            String sql = "select * from personnel inner join directory on personnel.dno = directory.dno;";
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
