@@ -11,9 +11,8 @@ import lombok.*;
 
 public class DirectoryDto {
     private int pno;
-    private String pname;
-    private String pcontact;
-    private String prank;
-    private int dno;
+    private String dname;
+    private String dcontact;
+
 
 }
